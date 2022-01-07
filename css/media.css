@@ -1,0 +1,5 @@
+@media (min-width:1023px) and  (max-width:1838px) {
+	.price-section__fg-elem-1,.price-section__fg-elem-2,.price-section__fg-elem-3,.price-section__fg-elem-4,.price-section__fg-elem-5{
+		display: none;
+	}
+}
