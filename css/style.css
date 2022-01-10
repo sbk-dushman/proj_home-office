@@ -222,3 +222,14 @@ ul{
     width: 97%;
     bottom: 0;
 }
+.recruitment-section{
+	background-color: #000;
+}
+.recruitment-list__item{
+	font-size: 30px;
+	line-height: 35px;
+	color: #fff;
+}
+.recruitment-list{
+	column-count: 2;
+}
