@@ -224,12 +224,74 @@ ul{
 }
 .recruitment-section{
 	background-color: #000;
+	padding-bottom: 143px;
 }
-.recruitment-list__item{
-	font-size: 30px;
-	line-height: 35px;
-	color: #fff;
+.recruitment-container{
+	padding: 0 79px;
 }
 .recruitment-list{
-	column-count: 2;
+	font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+    column-gap: 20px;
+    padding: 52px 0 0 0;
+    width: 39%;
+    display: flex;
+    margin-right: 66px;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.recruitment-list__item{
+	margin-bottom: 49px;
+    /* max-width: 20px; */
+    position: relative;
+    /* line-height: 3; */
+    /* width: 101%; */
+    /* min-width: 36%; */
+    min-height: 91px;
+    vertical-align: middle;
+    padding-left: 175px;
+    /* padding: 0 20px; */
+    position: relative;
+    /* text-align: center;*/
+}
+.recruitment-list__item::before{
+    content: '';
+    background-image: url(../img/person-avatar.svg);
+    width: 84px;
+    height: 85px;
+    background-repeat: no-repeat;
+    position: absolute;
+	left: 0;
+}
+.feedback-section__title{
+	color: #000;
+}
+.swiper {
+	width: 69%;
+    height: 622px;
+    /* padding: 9px 1px; */
+    border: 5px solid black;
+    border-radius: 15px;
+    margin-top: 22px;
+}
+.slide-button{
+	height: 97px;
+    width: 97px;
+    top: 50%;
+    position: absolute;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	z-index: 9;
+} 
+.slide-button-next{
+	right: -20px;
+
+}
+.slide-button-prev{
+	left: -20px;
+
 }

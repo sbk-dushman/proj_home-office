@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Document</title>
 </head>
@@ -91,6 +95,8 @@
 				<li class="recruitment-list__item">личный ассистент</li>
 				<li class="recruitment-list__item">менеджер по продажам</li>
 				<li class="recruitment-list__item">оператор колл центра</li>
+			</ul>
+			<ul class="recruitment-list">
 				<li class="recruitment-list__item">менеджер по&nbsp;работе с&nbsp;блоггерами</li>
 				<li class="recruitment-list__item">специалист маркетплейсов</li>
 				<li class="recruitment-list__item">руководитель высшего и&nbsp;среднего звена</li>
@@ -98,9 +104,60 @@
 			</ul>
 			</div>
 		</section>
+		<section class="feedback-section"> 
+			<div class="fixed-container feedback-container">
+				<h2 class="feedback-section__title">Отзывы</h2>
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+					  <!-- Slides -->
+					  <div class="swiper-slide">Slide 1</div>
+					  <div class="swiper-slide">Slide 2</div>
+					  <div class="swiper-slide">Slide 3</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+						<!-- If we need navigation buttons -->
+						<button class="slide-button slide-button-prev">
+							<svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M45.8529 0C20.5296 0 0 20.4155 0 45.5981C0 70.7808 20.5296 91.1963 45.8529 91.1963C71.1762 91.1963 91.7058 70.7808 91.7058 45.5981C91.7058 20.4155 71.1762 0 45.8529 0ZM55.0527 31.9477C55.812 31.1659 56.2322 30.1188 56.2227 29.0319C56.2132 27.945 55.7748 26.9054 55.0019 26.1368C54.229 25.3682 53.1835 24.9323 52.0906 24.9228C50.9976 24.9134 49.9447 25.3312 49.1585 26.0863L32.4847 42.6674C31.7032 43.4448 31.2642 44.499 31.2642 45.5981C31.2642 46.6973 31.7032 47.7515 32.4847 48.5289L49.1585 65.11C49.9447 65.8651 50.9976 66.2829 52.0906 66.2735C53.1835 66.264 54.229 65.8281 55.0019 65.0595C55.7748 64.2909 56.2132 63.2513 56.2227 62.1644C56.2322 61.0775 55.812 60.0304 55.0527 59.2486L41.326 45.5981L55.0527 31.9477Z" fill="#FADD47"/>
+							</svg>
+						</button>
+						<button class="slide-button slide-button-next">
+							<svg width="92" height="93" viewBox="0 0 92 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M45.8531 0.927734C71.1765 0.927734 91.7061 21.3432 91.7061 46.5256C91.7061 71.7081 71.1765 92.1235 45.8531 92.1235C20.5298 92.1235 0.000244141 71.7081 0.000244141 46.5256C0.000244141 21.3432 20.5298 0.927734 45.8531 0.927734ZM36.6534 32.8753C35.8941 32.0935 35.4739 31.0464 35.4834 29.9595C35.4929 28.8726 35.9313 27.8329 36.7042 27.0644C37.477 26.2958 38.5225 25.8599 39.6155 25.8504C40.7084 25.841 41.7614 26.2588 42.5476 27.0139L59.2214 43.5949C60.0028 44.3723 60.4418 45.4265 60.4418 46.5256C60.4418 47.6248 60.0028 48.679 59.2214 49.4563L42.5476 66.0374C41.7614 66.7925 40.7084 67.2103 39.6155 67.2009C38.5225 67.1914 37.477 66.7555 36.7042 65.9869C35.9313 65.2183 35.4929 64.1786 35.4834 63.0918C35.4739 62.0049 35.8941 60.9578 36.6534 60.176L50.3801 46.5256L36.6534 32.8753Z" fill="#FADD47"/>
+								</svg>
+								
+						</button>
+				</div>
+				
+			</div>
+		</section>
 	</main>
 <footer>
-</footer>	
+</footer>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>	
+<script type="module">
+	import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+  
+	const swiper = new Swiper('.swiper', {
+  // Optional parameters
+//   direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slide-button-next',
+    prevEl: '.slide-button-prev',
+  },
+
+});
+  </script>
 	<script src="./js/main.js"></script>
 </body>
 </html>
