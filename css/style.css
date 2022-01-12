@@ -16,6 +16,11 @@ html,body {
 ul{
 	list-style-type: none;
 }
+img{
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
 .header__phone-icon{
     vertical-align: middle;
     width: 38px;
@@ -45,13 +50,13 @@ ul{
  right: 0;
  top: -23px; 
 }
-.header-container::after,.hero-section-container::before,.about-section-bottom::after,.about-section-top:before,.about-section-bottom::before,.only-here-container::before,.only-here-container::after{
+.header-container::after,.hero-section-container::before,.about-section-bottom::after,.about-section-top:before,.about-section-bottom::before,.only-here-container::before,.only-here-container::after,.feedback-container::before,.feedback-container::after,.recruitment-container::before,.recruitment-container::after{
     content: '';
     width: 30px;
     background: #FADD47;
     position: absolute;
 }
-.hero-section-container::before{
+.hero-section-container::before,.feedback-container::before{
 	height: 100%;
 	right: 0;
 }
@@ -99,7 +104,7 @@ ul{
 	position: absolute;
 	left: 28%;
 }
-[class$="section__title"]{
+[class$="section__title"],.footer__title{
 	margin: 0 auto;
 	font-family: Roboto;
 	font-style: normal;
@@ -165,10 +170,10 @@ ul{
 	position: absolute;
 }
 .about-section-bottom::after{
-	right: 59px;
+	right: 25px;
     height: 30px;
     bottom: -30px;
-    width: 95%;
+    width: 97%
 }
 .about-section-top::before,.about-section-bottom::before{
     left: 25px;
@@ -214,50 +219,49 @@ ul{
 }
 .only-here-container::before{
 	height: 100%;
-	right: 28px;
+	right: -1px;
 }
-.only-here-container::after{
-	height: 30px;
-    right: 32px;
-    width: 97%;
-    bottom: 0;
+.only-here-container::after,.feedback-container::after{
+		height: 30px;
+		right: 17px;
+		width: 98%;
+		bottom: 0;
 }
 .recruitment-section{
 	background-color: #000;
-	padding-bottom: 143px;
 }
 .recruitment-container{
 	padding: 0 79px;
+	justify-content: center;
+	position: relative;
+	padding-bottom: 82px;
 }
 .recruitment-list{
-	font-size: 30px;
-    line-height: 35px;
-    color: #fff;
-    column-gap: 20px;
-    padding: 52px 0 0 0;
-    width: 39%;
-    display: flex;
-    margin-right: 66px;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    flex-direction: column;
+		font-size: 30px;
+		line-height: 35px;
+		color: #fff;
+		column-gap: 28px;
+		padding: 52px 0 0 0;
+		width: 85%;
+		/* display: flex; */
+		/* margin-right: 66px; */
+		column-count: 2;
 
 }
 .recruitment-list__item{
-	margin-bottom: 49px;
-    /* max-width: 20px; */
-    position: relative;
-    /* line-height: 3; */
-    /* width: 101%; */
-    /* min-width: 36%; */
-    min-height: 91px;
-    vertical-align: middle;
-    padding-left: 175px;
-    /* padding: 0 20px; */
-    position: relative;
-    /* text-align: center;*/
+	padding-top: 20px;
 }
-.recruitment-list__item::before{
+.recruitment-list__item,.recruitment-list__item_7,.recruitment-list__item_8{
+	margin-bottom: 78px;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 134px;
+    /* padding-top: 44px; */
+    width: 100%;
+    min-height: 71px;
+    min-height: 2;
+}
+.recruitment-list__item::before,.recruitment-list__item_7::before,.recruitment-list__item_8::before{
     content: '';
     background-image: url(../img/person-avatar.svg);
     width: 84px;
@@ -265,12 +269,13 @@ ul{
     background-repeat: no-repeat;
     position: absolute;
 	left: 0;
+	top: 0;
 }
 .feedback-section__title{
 	color: #000;
 }
 .swiper {
-	width: 69%;
+	width: 65%;
     height: 622px;
     /* padding: 9px 1px; */
     border: 5px solid black;
@@ -280,7 +285,7 @@ ul{
 .slide-button{
 	height: 97px;
     width: 97px;
-    top: 50%;
+    top: 51%;
     position: absolute;
 	border: none;
 	background: transparent;
@@ -288,10 +293,47 @@ ul{
 	z-index: 9;
 } 
 .slide-button-next{
-	right: -20px;
+	right: 10.3%;
 
 }
 .slide-button-prev{
-	left: -20px;
-
+	left: 10.3%;
 }
+.feedback-container{
+	position: relative;
+	padding-bottom: 150px;
+}
+.footer{
+	background-color: #000;
+}
+.contacts-list{
+	display: flex;
+    justify-content: center;
+	align-items: center;
+    width:100%;
+    padding-top: 37px;
+}
+.contacts-icon_wa{
+	margin-right: 158px;
+}
+.footer__copy{
+    width: 100%;
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    padding-top: 104px;
+    padding-bottom: 40px;
+}
+.recruitment-container::before {
+		left: 18px;
+		height: 100%;
+	}
+ .recruitment-container::after {
+		height: 30px;
+		right: 0px;
+		width: 99%;
+		bottom: -27px;
+	}
