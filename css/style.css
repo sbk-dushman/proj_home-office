@@ -17,10 +17,16 @@ html,body {
 ul{
 	list-style-type: none;
 }
+
 img{
 	max-width: 100%;
 	max-height: 100%;
 	object-fit: cover;
+}
+.contacts-list__link svg{
+	height: 100%;
+	width: 100%;
+
 }
 .header__phone,.header__phone-icon,.contacts-list__link path,.header__phone path{
 		transition: 0.5s ease-in;
@@ -47,12 +53,12 @@ img{
 	 color: #FADD47;
 	 fill:#FADD47
 }
-.contacts-list__link svg:hover{
-	content: '';
-	box-shadow: 10px 41px 41px -19px rgba(0,0,0,0.75);
-	-webkit-box-shadow: 10px 41px 41px -19px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 41px 41px -19px rgba(0,0,0,0.75);
-	position: absolute;
+.contacts-list__link {
+	-webkit-box-shadow: 14px 79px 90px 35px rgba(0,0,0,0.49);
+	-moz-box-shadow: 14px 79px 90px 35px rgba(0,0,0,0.49);
+	box-shadow: 14px 79px 90px 35px rgba(0,0,0,0.49);
+	border-radius: 100px;
+	/* position: absolute; */
 }
 .fixed-container{
 	max-width: 1705px;
@@ -68,7 +74,7 @@ img{
 }
 .header-container::after{
 	height: 78px;
- right: 0;
+ right: 25px;
  top: -23px; 
 }
 .header-container::after,.hero-section-container::before,.about-section-bottom::after,.about-section-top:before,.about-section-bottom::before,.only-here-container::before,.only-here-container::after,.feedback-container::before,.feedback-container::after,.recruitment-container::before,.recruitment-container::after{
@@ -76,10 +82,11 @@ img{
     width: 30px;
     background: #FADD47;
     position: absolute;
+	z-index: 5;
 }
-.hero-section-container::before,.feedback-container::before{
+.hero-section-container::before,.feedback-container::before,.only-here-container::before {
 	height: 100%;
-	right: 0;
+	right: 25px;
 }
 .header{
 	padding-top: 20px;
@@ -93,6 +100,7 @@ img{
 .hero-section-container{
 	position: relative;
 	padding-bottom: 24px;
+	/* flex-wrap: nowrap; */
 }
 .hero-section__logo{
     margin: 9px auto;
@@ -113,17 +121,20 @@ img{
 	position: relative;
 }
 .hero-section-container::after{
-    content: '';
-    width: 98.5%;
+	content: '';
+    width: 96%;
     background: #FADD47;
-    right: 0;
-	bottom: -1px;
-	height: 30px;
+    right: 40px;
+    bottom: 0;
+    height: 30px;
     position: absolute;
 }
 .hero-img{
 	position: absolute;
 	left: 28%;
+}
+.hero-img_bg{
+	max-width: 97.2%;
 }
 [class$="section__title"],.footer__title{
 	margin: 0 auto;
@@ -238,15 +249,11 @@ img{
 	position: relative;
 	padding-bottom: 131px;
 }
-.only-here-container::before{
-	height: 100%;
-	right: -1px;
-}
-.only-here-container::after,.feedback-container::after{
-		height: 30px;
-		right: 17px;
-		width: 98%;
-		bottom: 0;
+.only-here-container::after, .feedback-container::after {
+    height: 30px;
+    right: 31px;
+    width: 97%;
+    bottom: 0;
 }
 .recruitment-section{
 	background-color: #000;
@@ -334,6 +341,12 @@ img{
     width:100%;
     padding-top: 37px;
 	padding-bottom: 104px;
+}
+.contacts-list__item{
+	position: relative;
+	border-radius: 100px;
+    /* max-height: 20%; */
+    overflow: hidden;
 }
 .contacts-icon_wa{
 	margin-right: 158px;
