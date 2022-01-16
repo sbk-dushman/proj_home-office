@@ -205,14 +205,29 @@
 	.recruitment-list {
 		padding: 40px 0 0 0;
 	}
+
+	.recruitment-container::before,.about-section-top::before, .about-section-bottom::before {
+		left: 0;
+	}
+	.header-container::after, .hero-section-container::before, .feedback-container::before, .only-here-container::before {
+		right: 0;
+	}
+	.only-here-container::after,.recruitment-container::after,.hero-section-container::after{
+		width: 100%;
+	}
+
+.hero-section-container::before, .feedback-container::before, .only-here-container::before {
+	height: 100%;
+}
+
+.about-section-bottom::after, .only-here-container::after, .feedback-container::after {
+	width: 100%;
+	right: 0;
+}
+
 }
 @media (max-width:561px) {
-	.only-here-container::after {
-		width: 93vw;
-	}
-	.about-section-bottom::after, .only-here-container::after, .feedback-container::after {
-		right: 3vw;
-	}
+
 	.about-section-bottom::after,.only-here-container::after,.feedback-container::after,.recruitment-container::after,.hero-section-container::after{
 		height: 20px;
 	}
@@ -232,9 +247,6 @@
 	
 	.hero-section-container::before, .about-section-top:before, .about-section-bottom::before, .only-here-container::before, .feedback-container::before,.recruitment-container::before {
 		width: 20px;
-	}
-	.recruitment-container::after {
-		width: 96vw;
 	}
 	.hero-img_bg {
 		height: 524px;
@@ -313,6 +325,11 @@
 	.contacts-icon_wa {
 		margin-right: 100px;
 	}
+	.contacts-list__link svg {
+		height: 79%;
+		width: 79%;
+	}
+
 }
 	
 	@media (max-width:375px) {
@@ -333,24 +350,7 @@
 		[class^="only-here-listl__item"] {
 			margin-bottom: 20px;
 		}
-		.recruitment-container::before,.about-section-top::before, .about-section-bottom::before {
-			left: 0;
-		}
-		.header-container::after, .hero-section-container::before, .feedback-container::before, .only-here-container::before {
-			right: 0;
-		}
-		.only-here-container::after,.recruitment-container::after{
-			width: 100%;
-		}
 
-	.hero-section-container::before, .feedback-container::before, .only-here-container::before {
-    	height: 100%;
-	}
-
-	.about-section-bottom::after, .only-here-container::after, .feedback-container::after {
-		width: 100%;
-		right: 0;
-	}
 }
 @media (max-width: 320px){
 	.hero-img_bg {
