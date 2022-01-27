@@ -19,8 +19,9 @@
 		align-items: center;
 	}
 	.hero-text{
-		padding-left: 0;
-		max-width: 75%;
+	    padding-left: 0;
+   		max-width: 80%;
+    	font-size: 41px;
 	}
 	.hero-img_bg {
 		/* max-width: 100%; */
