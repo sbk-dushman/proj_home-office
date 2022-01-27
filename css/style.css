@@ -28,7 +28,7 @@ img{
 	width: 100%;
 
 }
-.header__phone,.header__phone-icon,.contacts-list__link path,.header__phone path{
+.header__phone,.header__phone-icon, .handset, .header__phone path,.contacts-list__link circle,.contacts-list__link svg path {
 		transition: 0.5s ease-in;
 		-webkit-transition: 0.5s ease-in;
 		-moz-transition: 0.5s ease-in;
@@ -53,13 +53,19 @@ img{
 	 color: #FADD47;
 	 fill:#FADD47
 }
+
 .contacts-list__link {
-	/* -webkit-box-shadow: 14px 79px 90px 35px rgba(0,0,0,0.49);
-	-moz-box-shadow: 14px 79px 90px 35px rgba(0,0,0,0.49);
-	box-shadow: 14px 79px 90px 35px rgba(0,0,0,0.49); */
 	border-radius: 100px;
-	/* position: absolute; */
+
 }
+.contacts-list__link:hover .handset,.contacts-list__link:hover circle{
+	fill:#FADD47;
+}
+.contacts-list__link:hover svg path {
+	fill:#000;
+}
+
+
 .fixed-container{
 	max-width: 1705px;
 	margin: 0 auto;
